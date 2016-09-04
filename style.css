@@ -112,6 +112,26 @@ input[type=submit]:focus,
 ::-moz-selection{background:#555}
 
 @media screen and (min-width: 783px) {
+/* TOP LEFT LOGO START */
+	.site-title{background:url(images/wd-symbol-hex-007296.svg) no-repeat;padding:0 0 0 60px;margin:0 .5em 0 -30px}
+	.rotate10deg{
+	-webkit-transition-duration:0.8s;
+	-moz-transition-duration:0.8s;
+	-o-transition-duration:0.8s;
+	transition-duration:0.8s;
+	-webkit-transition-property:-webkit-transform;
+	-moz-transition-property:-moz-transform;
+	-o-transition-property:-o-transform;
+	transition-property:transform;
+}
+	.rotate10deg:hover{
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+}
+
+/* TOP LEFT LOGO END */
+
 	body{background:#e6e6e6}
 	.site-title a:hover{color:#00abe1}
 	.site{
@@ -281,9 +301,9 @@ img.size-full,img.size-large,.wp-post-image,.post-thumbnail img,.site-content .p
 .site-content .entry-summary,
 .site-content .entry-meta,
 .page-content,
-.archive-header{margin:0 0 0 7em}
+.archive-header{margin:0 0 2em 7em}
 .full-width .site-content .entry-content,
-.full-width .site-content .comments-area{margin:0 0 0 10em}
+.full-width .site-content .comments-area{margin:0 0 2em 10em}
 .site-content .entry-meta{float:right;padding:1em 0}
 .header-image .site-content .entry-meta a,
 .site-content .has-post-thumbnail .entry-meta a,

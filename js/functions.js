@@ -11,6 +11,20 @@ jQuery(document).ready(function($){
 	}
 // hide header image if the page also has a featured image END
 
+// clickable logo START
+	$(".site-title").css({"cursor":"pointer"});
+	$(".site-title").click( function() {
+	var homelink = $(this).find('a');
+	//alert(homelink.attr('href'));
+	window.location = homelink.attr('href');
+	return false;
+	});
+// clickable logo END
+
+// rotating logo START
+	$(".site-title").addClass('rotate10deg');
+// rotating logo END
+
 // external links to tab START
 $('a').each(function() {
 	var a = new RegExp('/' + window.location.host + '/');
